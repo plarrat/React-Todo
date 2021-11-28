@@ -27,8 +27,8 @@ export default function TodoList(props){
             <hr/>
 
             <div class="input-group mb-3 mt-3">
-              <input type="text" class="form-control" value={todo} onChange={(e)=>{setTodo(e.target.value)}} placeholder="Nouvelle tache"  />
-              <button class="btn btn-secondary" type="button" id="button-addon2" onClick={addTodo}>+ Ajouter</button>
+              <input type="text" className="form-control" value={todo} onChange={(e)=>{setTodo(e.target.value)}} placeholder="Nouvelle tache"  />
+              <button className="btn btn-secondary" type="button" id="button-addon2" onClick={addTodo}>+ Ajouter</button>
             </div>
             <ul className="mt-3 list-group list-group-flush">
                 {lignes}
